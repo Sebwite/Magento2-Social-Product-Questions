@@ -1,0 +1,22 @@
+{
+    "name": "sebwite/magento2-social-product-questions",
+    "description": "Add Discus to your Magento 2 product page",
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "magento/magento-composer-installer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sebwite\\SocialProductQuestions\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

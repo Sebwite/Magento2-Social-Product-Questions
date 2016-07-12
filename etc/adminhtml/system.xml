@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="sebwite" sortOrder="200">
+            <label>Sebwite</label>
+        </tab>
+        <section id="socialquestions" showInDefault="1">
+            <tab>sebwite</tab>
+            <label>Social Product Questions</label>
+            <resource>Magento_Config::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0"
+                   showInStore="0">
+
+                <label>Social Product Questions</label>
+
+                <field id="provider" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Provider</label>
+                    <source_model>Sebwite\SocialProductQuestions\Model\Config\Source\Providers</source_model>
+                </field>
+                <field id="tabtitle" translate="label" type="text" sortOrder="41" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Tab title</label>
+                    <comment>The title of the tab on the product page.</comment>
+                </field>
+                <field id="facebook_colorscheme" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="0"
+                       showInStore="0">
+                    <label>Facebook color scheme</label>
+                    <source_model>Sebwite\SocialProductQuestions\Model\Config\Source\FacebookColorSchemes</source_model>
+                    <depends>
+                        <field id="provider">facebook</field>
+                    </depends>
+                </field>
+
+                <field id="disqusid" translate="label" type="text" sortOrder="41" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Disqus identifier</label>
+                    <comment>The disqus identifier.</comment>
+                    <depends>
+                        <field id="provider">disqus</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
