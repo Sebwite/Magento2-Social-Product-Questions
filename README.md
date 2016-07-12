@@ -4,6 +4,11 @@ This extension adds an extra questions tab to the Magento 2 product page. You ca
 * Facebook
 * Disqus
 
+## Screenshots
+![Alt Sebwite](https://github.com/Sebwite/Magento2-Social-Product-Questions/blob/master/screenshot.png "Sebwite.nl")
+![Alt Sebwite](https://github.com/Sebwite/Magento2-Social-Product-Questions/blob/master/screenshot1.png "Sebwite.nl")
+
+
 ## Installation
 ```composer require sebwite/magento2-social-product-questions``` or download an place in app/code/Sebwite.
 
